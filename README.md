@@ -6,15 +6,15 @@ The program prints numbers from 1 to 100, but:
 - for multiples of 3 and 5, it prints "FizzBuzz"  
 
 ##  Project Structure
+```
 fizzbuzz-project/
 ├── src/
 │   └── com/
 │       └── example/
 │           └── fizzbuzz/
-│               ├── FizzBuzz.java     # FizzBuzz logic
-│               └── Main.java         # entry point
-     
-
+│               ├── FizzBuzz.java    # FizzBuzz logic with rule-based architecture
+│               └── Main.java        # Application entry point and configuration
+```
 ##  How to Run
 1. Make sure you have JDK 17+ installed (`java -version` to check).  
 2. Navigate to src/main/java.  
@@ -23,12 +23,17 @@ fizzbuzz-project/
    javac com/example/fizzbuzz/*.java
 
 ## How to Add New Rules
-In Main.java, rules are added via the addRule(divisor, word) method.
-Example: new FizzBuzz()
+
+In `Main.java`, rules are added via the `addRule(divisor, word)` method.
+
+Example:
+```java
+new FizzBuzz()
     .addRule(3, "Fizz")
     .addRule(5, "Buzz")
     .addRule(7, "NewWord") // new rule
     .run(1, 100);
+```
     
 ## Technical Implementation   
 1. Data Structure
