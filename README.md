@@ -15,13 +15,22 @@ fizzbuzz-project/
 │               ├── FizzBuzz.java    # FizzBuzz logic with rule-based architecture
 │               └── Main.java        # Application entry point and configuration
 ```
-##  How to Run
-1. Make sure you have JDK 17+ installed (`java -version` to check).  
-2. Navigate to src/main/java.  
-3. Compile the classes:
-   ```bash
-   javac com/example/fizzbuzz/*.java
+## How to Run
 
+### Prerequisites
+- JDK 17 or higher installed
+- Verify with: `java -version`
+
+### Compilation and Execution
+1. Navigate to the project root directory
+2. Compile the classes:
+   ```bash
+   javac src/com/example/fizzbuzz/*.java
+   ```
+3.Run the application:
+ ```bash
+java -cp src com.example.fizzbuzz.Main
+ ```
 ## How to Add New Rules
 
 In `Main.java`, rules are added via the `addRule(divisor, word)` method.
